@@ -7,6 +7,7 @@ local keymap = vim.keymap
 
 -- enter on NORMAL mode
 keymap.set('i', 'jj', '<ESC>', opts)
+keymap.set('n', '<leader>i', '<CMD>Lspsaga goto_definition<CR>')
 
 -- replace content lke Ctrl + f vscode
 keymap.set('n', 'T', ':%s/\\C')
@@ -51,7 +52,7 @@ cmp.setup {
     end,
   },
   mapping = {
-    ['<Tab>'] = cmp.mapping.confirm { select = false },
+    ['<Enter>'] = cmp.mapping.confirm { select = false },
   },
 }
 

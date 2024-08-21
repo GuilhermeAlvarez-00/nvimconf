@@ -132,9 +132,9 @@ ls.add_snippets('typescriptreact', {
       [[
 import {{ FC }} from 'react';
 
-type T{} = {{}};
+interface I{} {{}};
 
-export const {}: FC<T{}> = (props) => {{
+export const {}: FC<I{}> = (props) => {{
   return (
     <div>
       {}
