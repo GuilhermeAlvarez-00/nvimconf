@@ -8,6 +8,7 @@ local keymap = vim.keymap
 -- enter on NORMAL mode
 keymap.set('i', 'jj', '<ESC>', opts)
 keymap.set('n', '<leader>i', '<CMD>Lspsaga goto_definition<CR>')
+keymap.set('n', 'ff', 'F')
 
 -- replace content lke Ctrl + f vscode
 keymap.set('n', 'T', ':%s/\\C')
