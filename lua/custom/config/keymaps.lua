@@ -9,9 +9,12 @@ local keymap = vim.keymap
 keymap.set('i', 'jj', '<ESC>', opts)
 keymap.set('n', '<leader>i', '<CMD>Lspsaga goto_definition<CR>')
 keymap.set('n', 'ff', 'F')
+keymap.set('n', 'tm', '<CMD> Telescope colorscheme <CR>')
+keymap.set('n', '<leader>sa', '<CMD>wa <CR>')
+
 
 -- replace content lke Ctrl + f vscode
-keymap.set('n', 'T', ':%s/\\C')
+keymap.set('n', 'R', ':%s/\\C')
 
 --- delete word and enter on insert mode
 keymap.set('n', 'C', 'ciw')

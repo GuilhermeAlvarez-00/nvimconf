@@ -11,8 +11,9 @@ require('lspsaga').setup({
 	}
 })
 
-vim.keymap.set('n', 'L', '<CMD>Lspsaga diagnostic_jump_next<CR>')
-vim.keymap.set('n', 'gd', '<CMD>Lspsaga goto_type_definition<CR>')
-vim.keymap.set('n', 'K', '<CMD>Lspsaga peek_type_definition<CR>')
+vim.keymap.set('n', 'L', '<CMD>Lspsaga show_line_diagnostics<CR>')
+vim.keymap.set('n', 'K', '<CMD>Lspsaga peek_definition<CR>')
+vim.keymap.set('n', '<leader> t', '<CMD>Lspsaga hover_doc <CR>')
+vim.keymap.set('n', 'O', '<CMD>Lspsaga code_action <CR>')
 
 return {}
